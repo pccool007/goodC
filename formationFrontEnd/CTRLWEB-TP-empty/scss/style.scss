@@ -1,0 +1,15 @@
+// base
+@import './base/variables';
+@import './base/easing';
+@import './base/fonts';
+@import './base/layout';
+
+// common
+@import './common/button';
+@import './common/header';
+@import './common/footer';
+@import './common/loader';
+
+// pages
+@import './pages/home';
+@import './pages/services';

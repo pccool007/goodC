@@ -1,0 +1,52 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $main-color;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    animation-name:hideLoader;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: $easeInOutExpo;
+    animation-duration: 0.6s; 
+    animation-fill-mode:forwards; 
+        .loop-wrapper{
+            position: absolute;
+            transform: translate3d(-50%,-50%,0);
+            top:50%;
+            left: 50%;
+            display: block;
+            overflow: hidden;
+            .logo{
+                width: 150px;
+                transform: translate3d(0,108%,0);
+                animation-name:reveal;
+                animation-delay: 1s;
+                animation-iteration-count: 2;
+                animation-direction: alternate;
+
+                animation-duration: 0.6s; 
+                .cls-1, .cls-2{
+                    fill:white;
+                }
+            }
+        }
+}
+@keyframes reveal{
+    from{
+        transform: translate3d(0, 108%,0);
+    }
+    to{
+        transform: translate3d(0, 0,0);
+    }
+}
+@keyframes hideLoader{
+    from{
+        transform: translate3d(0, 0%,0);
+    }
+    to{
+        transform: translate3d(0, 108%,0);
+    }
+}

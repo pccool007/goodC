@@ -1,0 +1,22 @@
+.header{
+    background: white;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    border:1px solid;
+    .logo{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);//form himself to center it
+        width: 180px;
+        height: 40px;
+        .cls-1{
+            fill:black;
+         
+        }
+        .cls-2{
+            fill:$main-color;
+        }
+    }
+}
